@@ -1,0 +1,271 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 0;
+    color: black;
+    background: url(bg-5.jpg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Memusatkan logo sosial media */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease; /* Transisi halus untuk transformasi */
+}
+
+.social-logo:hover img {
+    transform: scale(1.2); /* Membesarkan logo saat hover */
+}
+
+.social-logo a:hover {
+    background-color: #555;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.profil-image {
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.text-info h2 {
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li {
+    display: inline;
+}
+
+.horizontal-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.horizontal-list a:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.text-section {
+    margin-right: 20px;
+    align-items: center;
+    transform: translateX(-100px); /* Mulai dari kiri */
+    opacity: 0; /* Mulai dari tidak terlihat */
+    animation: slideIn 1s forwards; /* Menjalankan animasi */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Bergerak ke posisi normal */
+        opacity: 1; /* Menjadi terlihat */
+    }
+} 
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 5px 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.image-section {
+    flex-shrink: 0;
+    align-items: center;
+    transform: translateX(100px); /* Mulai dari kanan */
+    opacity: 0; /* Mulai dari tidak terlihat */
+    animation: slideIn 1s forwards; /* Menjalankan animasi */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Bergerak ke posisi normal */
+        opacity: 1; /* Menjadi terlihat */
+    }
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    padding: 20px;
+}
+
+.content.visible {
+    opacity: 1; /* Menampilkan elemen */
+    transform: translateX(0); /* Gerakkan ke posisi normal */
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+aboutme.html {
+    .background-image {
+        background-image: url('background1.jpg'); /* Ganti dengan path gambar kamu */
+        background-position: center; /* Memposisikan gambar di tengah */
+        height: 100vh; /* Tinggi elemen, bisa disesuaikan */
+        width: 100%; /* Lebar elemen */
+    }
+}
+certification.html {
+    .background-image {
+        background-image: url('background2.jpg'); /* Ganti dengan path gambar kamu */
+        background-position: center; /* Memposisikan gambar di tengah */
+        height: 100vh; /* Tinggi elemen, bisa disesuaikan */
+        width: 100%; /* Lebar elemen */
+    }
+}
+
+.sertifikat-gambar {
+    width: 200px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertikal center */
+    justify-content: center; /* Horizontal center */
+    text-align: center;
+    gap: 20px; /* Jarak antara gambar dan teks */
+    transform: translateX(100px); /* Mulai dari kanan */
+    opacity: 0; /* Mulai dari tidak terlihat */
+    animation: slideIn 1s forwards; /* Menjalankan animasi */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Bergerak ke posisi normal */
+        opacity: 1; /* Menjadi terlihat */
+    }
+}
+
+.text-certification {
+    transform: translateX(-100px); /* Mulai dari kiri */
+    opacity: 0; /* Mulai dari tidak terlihat */
+    animation: slideIn 1s forwards; /* Menjalankan animasi */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Bergerak ke posisi normal */
+        opacity: 1; /* Menjadi terlihat */
+    }
+}
+
+img {
+    width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;  
+}
+
+.footer p {
+    font-size: 12px;
+    margin: 10px 0;
+}
